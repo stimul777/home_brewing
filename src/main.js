@@ -1,10 +1,13 @@
 import Vue from 'vue'
-import 'materialize-css/dist/js/materialize.min'
 import App from './App.vue'
 import router from './router/router'
 import dateFilter from '@/filters/date.filter'
+import Vuelidate from 'vuelidate'
+import 'materialize-css/dist/js/materialize.min'
+
 
 Vue.config.productionTip = false
+Vue.use(Vuelidate)
 Vue.filter('dateFilter', dateFilter)
 
 new Vue({
