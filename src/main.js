@@ -5,12 +5,17 @@ import dateFilter from '@/filters/date.filter'
 import Vuelidate from 'vuelidate'
 import 'materialize-css/dist/js/materialize.min'
 import store from './store/store'
+import messagePlugin from '@/utils/message.plugin'
+// import './registerServiceWorker'
+
+
 // firebase
 import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/database'
 
 Vue.config.productionTip = false
+Vue.use(messagePlugin)
 Vue.use(Vuelidate)
 Vue.filter('dateFilter', dateFilter)
 
