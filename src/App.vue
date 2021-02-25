@@ -1,30 +1,29 @@
 <template>
-  <div id='app'>
-    <component :is='layout'>
+  <div id="app">
+    <component :is="layout">
       <router-view />
     </component>
   </div>
 </template>
 
 <script>
-import EmptyLayout from '@/layouts/EmptyLayout'
-import MainLayout from '@/layouts/MainLayout'
+import EmptyLayout from "@/layouts/EmptyLayout";
+import MainLayout from "@/layouts/MainLayout";
 export default {
   computed: {
     layout() {
       // в зависимости от роута перерисовать layout
-      return (this.$route.meta.layout || 'empty') + '-layout'
-    },
+      return (this.$route.meta.layout || "empty") + "-layout";
+    }
   },
   components: {
     EmptyLayout,
-    MainLayout,
-  },
-}
+    MainLayout
+  }
+};
 </script>
 
-
-<style >
-@import '~materialize-css/dist/css/materialize.min.css';
-@import 'assets/index.css';
+<style>
+@import "~materialize-css/dist/css/materialize.min.css";
+@import "assets/index.css";
 </style>
