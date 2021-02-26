@@ -65,10 +65,12 @@ export default {
     limit: 100,
     current: null
   }),
+
   validations: {
     title: { required },
     limit: { minValue: minValue(100) }
   },
+
   methods: {
     async submitHandler() {
       if (this.$v.$invalid) {
@@ -89,17 +91,20 @@ export default {
       } catch (error) {}
     }
   },
+
   mounted() {
     this.select = M.FormSelect.init(this.$refs.select);
     // делает input активным при рендеренге v-model со значением
     M.updateTextFields();
   },
+
   created() {
     const { id, title, limit } = this.categories[0];
     this.current = id;
     this.title = title;
     this.limit = limit;
   },
+
   watch: {
     // следим за изменением значений select
     current(catId) {
@@ -109,6 +114,7 @@ export default {
       this.limit = limit;
     }
   },
+
   // очистка памяти
   destroyed() {
     if (this.select && this.select.destroy) {

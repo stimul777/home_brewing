@@ -1,19 +1,20 @@
+import Vue from "vue";
+import Vuex from "vuex";
+import auth from "./auth";
+import info from "./info";
+import category from "./category";
+import record from "./record";
 
-import Vue from 'vue'
-import Vuex from 'vuex'
-import auth from './auth'
-import info from './info'
-import category from './category'
-
-Vue.use(Vuex)
+Vue.use(Vuex);
 export default new Vuex.Store({
   actions: {
-   async fetchCurrency(){
-    const keyFixer = process.env.VUE_APP_FIXER_API
-    const res = await fetch(`http://data.fixer.io/api/latest?access_key=${keyFixer}&symbols=USD,EUR,RUB`)
-    return await res.json()
-  }
-
+    async fetchCurrency() {
+      const keyFixer = process.env.VUE_APP_FIXER_API;
+      const res = await fetch(
+        `http://data.fixer.io/api/latest?access_key=${keyFixer}&symbols=USD,EUR,RUB`
+      );
+      return await res.json();
+    }
   },
 
   state: {
@@ -21,10 +22,10 @@ export default new Vuex.Store({
   },
   mutations: {
     setError(state, error) {
-      state.error = error
+      state.error = error;
     },
     clearError(state) {
-      state.error = null
+      state.error = null;
     }
   },
   getters: {
@@ -33,6 +34,7 @@ export default new Vuex.Store({
   modules: {
     auth,
     info,
-    category
+    category,
+    record
   }
-})
+});
