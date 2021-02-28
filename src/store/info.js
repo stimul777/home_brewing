@@ -19,7 +19,7 @@ export default {
       }
     },
     // Обновление баланса из категории
-    async updateInfo({ dispatch, commit }, toUpdate) {
+    async updateInfo({ dispatch, commit, getters }, toUpdate) {
       try {
         const uid = await dispatch("getUid");
         const updateData = { ...getters.info, ...toUpdate };

@@ -116,7 +116,6 @@ export default {
 
       if (this.canCreateRecord) {
         try {
-          console.log("!!!");
           await this.$store.dispatch("createRecord", {
             categoryId: this.category,
             amount: this.amount,
@@ -124,6 +123,8 @@ export default {
             type: this.type,
             date: new Date().toJSON()
           });
+
+          this.$message(`Новая запись успешно создана!`);
 
           // расход или доход -считаем
           const newBill =
@@ -165,11 +166,11 @@ export default {
     if (this.categories.length) {
       this.category = this.categories[0].id;
     }
-    // подвинуть из очереди, чтобы форма точно прогрузилась
-    setTimeout(() => {
+    // дождаться пока DOM прогрузиться и после этого подргурзить селекты(чтобы они точно отрисовались)
+    this.$nextTick(() => {
       this.select = M.FormSelect.init(this.$refs.select);
       M.updateTextFields();
-    }, 0);
+    });
   },
 
   destroyed() {
