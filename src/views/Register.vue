@@ -51,18 +51,39 @@
           Сейчас он {{ password.length }}
         </small>
       </div>
+      <div class="input-field">
+        <input
+          id="name"
+          type="text"
+          v-model.trim="name"
+          :class="{ invalid: $v.name.$dirty && !$v.name.required }"
+        />
+        <label for="name">Имя</label>
+        <small
+          class="helper-text invalid"
+          v-if="$v.name.$dirty && !$v.name.required"
+        >
+          Введите ваше имя
+        </small>
+      </div>
+      <p>
+        <label>
+          <input type="checkbox" v-model="agree" />
+          <span>С правилами согласен</span>
+        </label>
+      </p>
     </div>
     <div class="card-action">
       <div>
         <button class="btn waves-effect waves-light auth-submit" type="submit">
-          Войти
+          Зарегистрироваться
           <i class="material-icons right">send</i>
         </button>
       </div>
 
       <p class="center">
-        Нет аккаунта?
-        <router-link to="/register">Зарегистрироваться</router-link>
+        Уже есть аккаунт?
+        <router-link to="/login">Войти!</router-link>
       </p>
     </div>
   </form>
@@ -70,22 +91,20 @@
 
 <script>
 import { email, required, minLength } from "vuelidate/lib/validators";
-import messages from "@/utils/messages";
 
 export default {
-  name: "login",
+  name: "register",
   data: () => ({
     email: "",
-    password: ""
+    password: "",
+    name: "",
+    agree: false
   }),
   validations: {
     email: { email, required },
-    password: { required, minLength: minLength(6) }
-  },
-  mounted() {
-    if (messages[this.$route.query.message]) {
-      this.$message(messages[this.$route.query.message]);
-    }
+    password: { required, minLength: minLength(6) },
+    name: { required },
+    agree: { checked: v => v }
   },
   methods: {
     async submitHandler() {
@@ -93,13 +112,15 @@ export default {
         this.$v.$touch();
         return;
       }
+
       const formData = {
         email: this.email,
-        password: this.password
+        password: this.password,
+        name: this.name
       };
 
       try {
-        await this.$store.dispatch("login", formData);
+        await this.$store.dispatch("register", formData);
         this.$router.push("/");
       } catch (e) {}
     }
