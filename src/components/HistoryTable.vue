@@ -14,7 +14,7 @@
 
       <tbody>
         <tr v-for="(record, idx) of records" :key="record.id">
-          <td>{{ idx + 1 }}</td>
+          <td>{{ idx + 1 + "." }}</td>
           <td>{{ record.amount | currencyFilter() }}</td>
           <td>{{ record.date | dateFilter("datetime") }}</td>
           <td>{{ record.categoryName }}</td>

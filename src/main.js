@@ -9,6 +9,8 @@ import messagePlugin from "@/utils/message.plugin";
 import Loader from "@/components/app/Loader";
 import currencyFilter from "@/filters/currency.filter";
 import tooltipDirective from "@/directives/tooltip.directive";
+import Paginate from "vuejs-paginate";
+
 // import './registerServiceWorker'
 
 // firebase
@@ -16,6 +18,7 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
 
+Vue.component("Paginate", Paginate);
 Vue.config.productionTip = false;
 Vue.use(messagePlugin);
 // создание новой директивы
