@@ -8,6 +8,7 @@ import store from "./store/store";
 import messagePlugin from "@/utils/message.plugin";
 import Loader from "@/components/app/Loader";
 import currencyFilter from "@/filters/currency.filter";
+import tooltipDirective from "@/directives/tooltip.directive";
 // import './registerServiceWorker'
 
 // firebase
@@ -17,6 +18,8 @@ import "firebase/database";
 
 Vue.config.productionTip = false;
 Vue.use(messagePlugin);
+// создание новой директивы
+Vue.directive("tooltip", tooltipDirective);
 Vue.use(Vuelidate);
 Vue.filter("dateFilter", dateFilter);
 Vue.filter("currencyFilter", currencyFilter);

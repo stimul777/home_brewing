@@ -12,7 +12,7 @@
         </div>
       </main>
 
-      <div class="fixed-action-btn">
+      <div class="fixed-action-btn" v-tooltip="'Создать новую запись'">
         <router-link class="btn-floating btn-large blue" to="/record">
           <i class="large material-icons">add</i>
         </router-link>
@@ -24,22 +24,37 @@
 <script>
 import Navbar from "@/components/app/Navbar";
 import Sidebar from "@/components/app/Sidebar";
+import messages from "@/utils/messages";
 
 export default {
   components: {
     Navbar,
     Sidebar
   },
+
   name: "main-layout",
   data: () => ({
     isOpen: true,
     loading: true
   }),
+
   async mounted() {
     if (!Object.keys(this.$store.getters.info).length) {
       await this.$store.dispatch("fetchInfo");
     }
     this.loading = false;
+  },
+
+  computed: {
+    error() {
+      return this.$store.getters.error;
+    }
+  },
+
+  watch: {
+    error(fbError) {
+      this.$error(messages[fbError.code] || "Что-то пошло не так");
+    }
   }
 };
 </script>
