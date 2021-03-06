@@ -1,0 +1,58 @@
+{
+  "Profile_Title": "Profile",
+  "Profile_message_EnterName": "Enter name:",
+  "Profile_name": "Name",
+  "Profile_update": "Update",
+
+  "Sidebar_Bill": "Bill",
+  "Sidebar_History": "History",
+  "Sidebar_Planing": "Planning",
+  "Sidebar_Record": "New record",
+  "Sidebar_Category": "Catehories",
+
+  "Categories_categories": "Categories",
+  "Categories_noCategories": "No categories",
+
+  "Detail": "History",
+  "Detail_description": "Description",
+  "Detail_sum": "Sum",
+  "Detail_category": "Category",
+
+  "History_history_store": "Record history",
+  "History_warning": "No entries yet",
+  "History_added_record": "Add the first",
+
+  "Home_home": "Bill",
+
+  "Login_title": " ",
+  "Login_warning": "",
+  "Login_password": "",
+  "Login_enter_password": "",
+  "Login_btn_login": "",
+  "Login_no_accaunt": "",
+  "Login_registration": "",
+
+  "Planing_title": "Planing",
+  "Planing_no_categories": "No categories",
+  "Planing_add_category": "Add a new category",
+
+  "Record_title": "New record",
+  "Record_no_categories": "Add a new category",
+  "Record_add_category": "New record",
+  "Record_enter_category": "Select record", 
+  "Record_income": "Income",
+  "Record_consumption": "Consumption",
+  "Record_sum": "Sum",
+  "Record_min_value": "min value",
+  "Record_description": "Description",
+  "Record_enter_description": "Enter description",
+  "Record_added": "Create"
+  
+
+  
+
+
+
+
+
+}

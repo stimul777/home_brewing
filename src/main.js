@@ -8,6 +8,7 @@ import store from "./store/store";
 import messagePlugin from "@/utils/message.plugin";
 import Loader from "@/components/app/Loader";
 import currencyFilter from "@/filters/currency.filter";
+import localizeFilter from "@/filters/localize.filter.js";
 import tooltipDirective from "@/directives/tooltip.directive";
 import Paginate from "vuejs-paginate";
 
@@ -26,6 +27,7 @@ Vue.directive("tooltip", tooltipDirective);
 Vue.use(Vuelidate);
 Vue.filter("dateFilter", dateFilter);
 Vue.filter("currencyFilter", currencyFilter);
+Vue.filter("localize", localizeFilter);
 
 Vue.component("Loader", Loader);
 

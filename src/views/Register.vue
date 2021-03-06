@@ -1,7 +1,7 @@
 <template>
   <form class="card auth-card" @submit.prevent="submitHandler">
     <div class="card-content">
-      <span class="card-title">Домашняя бухгалтерия</span>
+      <span class="card-title">{{ "Register_title" | localize }}</span>
       <div class="input-field">
         <input
           id="email"
@@ -17,13 +17,12 @@
         <small
           class="helper-text invalid"
           v-if="$v.email.$dirty && !$v.email.required"
-          >Поле Email не должно быть пустым</small
+          >{{ "Login_warning" | localize }}</small
         >
         <small
           class="helper-text invalid"
           v-else-if="$v.email.$dirty && !$v.email.email"
-          >Введите корретный Email</small
-        >
+        ></small>
       </div>
       <div class="input-field">
         <input
@@ -36,12 +35,12 @@
               ($v.password.$dirty && !$v.password.minLength)
           }"
         />
-        <label for="password">Пароль</label>
+        <label for="password"> {{ "Login_password" | localize }}</label>
         <small
           class="helper-text invalid"
           v-if="$v.password.$dirty && !$v.password.required"
         >
-          Введите пароль
+          {{ "Login_enter_password" | localize }}
         </small>
         <small
           class="helper-text invalid"
@@ -58,32 +57,34 @@
           v-model.trim="name"
           :class="{ invalid: $v.name.$dirty && !$v.name.required }"
         />
-        <label for="name">Имя</label>
+        <label for="name">{{ "Profile_name" | localize }}</label>
         <small
           class="helper-text invalid"
           v-if="$v.name.$dirty && !$v.name.required"
         >
-          Введите ваше имя
+          {{ "Profile_message_EnterName" | localize }}
         </small>
       </div>
       <p>
         <label>
           <input type="checkbox" v-model="agree" />
-          <span>С правилами согласен</span>
+          <span>{{ "Register_regulations_checkbox" | localize }}</span>
         </label>
       </p>
     </div>
     <div class="card-action">
       <div>
         <button class="btn waves-effect waves-light auth-submit" type="submit">
-          Зарегистрироваться
+          {{ "Register_registration" | localize }}
           <i class="material-icons right">send</i>
         </button>
       </div>
 
       <p class="center">
-        Уже есть аккаунт?
-        <router-link to="/login">Войти!</router-link>
+        {{ "Register_account_exists" | localize }}
+        <router-link to="/login">
+          {{ "Register_come_in" | localize }}</router-link
+        >
       </p>
     </div>
   </form>

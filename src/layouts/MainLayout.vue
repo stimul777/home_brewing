@@ -4,7 +4,7 @@
     <div v-else class="app-main-layout">
       <Navbar @click="isOpen = !isOpen" />
 
-      <Sidebar v-model="isOpen" />
+      <Sidebar v-model="isOpen" :key="locale" />
 
       <main class="app-content" :class="{ full: !isOpen }">
         <div class="app-page">
@@ -48,6 +48,10 @@ export default {
   computed: {
     error() {
       return this.$store.getters.error;
+    },
+    // при смене языка - перерисовать sideBar
+    locale() {
+      return this.$store.getters.info.locale;
     }
   },
 

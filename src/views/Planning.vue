@@ -1,14 +1,16 @@
 <template>
   <div>
     <div class="page-title">
-      <h3>Планирование</h3>
+      <h3>{{ "Planing_title" | localize }}</h3>
       <h4>{{ info.bill | currencyFilter("RUB") }}</h4>
     </div>
 
     <Loader v-if="loading" />
     <p v-else-if="!categories.length" class="center">
-      Категорий пока нет.
-      <router-link to="/categories">Добавить новую категорию</router-link>
+      {{ "Planing_no_categories" | localize }}
+      <router-link to="/categories">
+        {{ "Planing_add_category" | localize }}</router-link
+      >
     </p>
 
     <section class="progress-Bar" v-else>

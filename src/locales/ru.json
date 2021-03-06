@@ -1,0 +1,58 @@
+{
+  "Profile_Title": "Профиль",
+  "Profile_message_EnterName": "Введите имя:",
+  "Profile_name": "Имя",
+  "Profile_update": "Обновить",
+
+   "Sidebar_Bill": "Счет",
+   "Sidebar_History": "История",
+   "Sidebar_Planing": "Планирование",
+   "Sidebar_Record": "Новая запись",
+   "Sidebar_Category": "Категории",
+
+   "Categories_categories": "Категории",
+   "Categories_noCategories": "Категории отсутствуют",
+
+   "Detail": "История",
+   "Detail_description": "Описание",
+   "Detail_sum": "Сумма",
+   "Detail_category": "Категория",
+   
+   "History_history_store": "История записей",
+   "History_warning": "Записей пока нет",
+   "History_added_record": "Добавьте первую",
+
+   "Home_home": "Счет",
+
+   "Login_title": "Домашняя бухгалтерия",
+   "Login_warning": "Поле Email не должно быть пустым",
+   "Login_password": "Пароль",
+   "Login_enter_password": "Введите пароль",
+   "Login_btn_login": "Войти",
+   "Login_no_accaunt": "Нет аккаунта?",
+   "Login_registration": "Зарегистрироваться",
+
+   "Planing_title": "Планирование",
+   "Planing_no_categories": "Категорий пока нет",
+   "Planing_add_category": "Добавить новую категорию",
+
+   "Record_title": "Новая запись",
+   "Record_no_categories": "Категорий пока нет",
+   "Record_add_category": "Новая запись",
+   "Record_enter_category": "Выберите категорию", 
+   "Record_income": "Доход",
+   "Record_consumption": "Расход",
+   "Record_sum": "Сумма",
+   "Record_min_value": "Минимальное значение",
+   "Record_description": "Описание",
+   "Record_enter_description": "Введите описание",
+   "Record_added": "Создать",
+
+   "Register_title": "Домашняя бухгалтерия",
+   "Register_correct_email": "Введите корректный email",
+   "Register_regulations_checkbox": "С правилами согласен",
+   "Register_registration": "Зарегистрироваться",
+   "Register_account_exists": "Уже есть аккаунт?",
+   "Register_come_in": "Войти!"
+
+}
