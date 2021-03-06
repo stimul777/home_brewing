@@ -58,6 +58,12 @@ const routes = [
     name: "record",
     meta: { layout: "main", auth: true },
     component: () => import("@/views/Record.vue")
+  },
+  {
+    path: "/cryptocurrency",
+    name: "cryptocurrency",
+    meta: { layout: "main", auth: true },
+    component: () => import("@/views/Cryptocurrency.vue")
   }
 ];
 
