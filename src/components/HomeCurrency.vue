@@ -3,14 +3,16 @@
     <div class="card orange darken-3 bill-card">
       <div class="card-content white-text">
         <div class="card-header">
-          <span class="card-title">Курс валют</span>
+          <span class="card-title">{{
+            "HomeCurrency_comp_curs" | localize
+          }}</span>
         </div>
         <table>
           <thead>
             <tr>
-              <th>Валюта</th>
-              <th>Курс</th>
-              <th>Дата</th>
+              <th>{{ "HomeCurrency_comp_currency" | localize }}</th>
+              <th>{{ "HomeCurrency_comp_curs_tab" | localize }}</th>
+              <th>{{ "HistoryTb_comp_date" | localize }}</th>
             </tr>
           </thead>
 

@@ -4,17 +4,17 @@
       <thead>
         <tr>
           <th>#</th>
-          <th>Сумма</th>
-          <th>Дата</th>
-          <th>Категория</th>
-          <th>Тип</th>
-          <th>Открыть</th>
+          <th>{{ "Detail_sum" | localize }}</th>
+          <th>{{ "HistoryTb_comp_date" | localize }}</th>
+          <th>{{ "Detail_category" | localize }}</th>
+          <th>{{ "HistoryTb_comp_type" | localize }}</th>
+          <th>{{ "HistoryTb_comp_open" | localize }}</th>
         </tr>
       </thead>
 
       <tbody>
         <tr v-for="(record, idx) of records" :key="record.id">
-          <td>{{ idx + 1 }}</td>
+          <td>{{ idx + 1 + "." }}</td>
           <td>{{ record.amount | currencyFilter() }}</td>
           <td>{{ record.date | dateFilter("datetime") }}</td>
           <td>{{ record.categoryName }}</td>

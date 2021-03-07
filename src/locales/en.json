@@ -1,0 +1,96 @@
+{
+  "Profile_Title": "Profile",
+  "Profile_message_EnterName": "Enter name:",
+  "Profile_name": "Name",
+  "Profile_update": "Update",
+  "Profile_exit": "Exit",
+
+  "Sidebar_Bill": "Bill",
+  "Sidebar_History": "History",
+  "Sidebar_Planing": "Planning",
+  "Sidebar_Record": "New record",
+  "Sidebar_Category": "Catehories",
+
+  "Categories_categories": "Categories",
+  "Categories_noCategories": "No categories",
+
+  "Detail": "History",
+  "Detail_description": "Description",
+  "Detail_sum": "Sum",
+  "Detail_category": "Category",
+
+  "History_history_store": "Record history",
+  "History_warning": "No entries yet",
+  "History_added_record": "Add the first",
+  "History_btn_prev": "Prev",
+  "History_btn_next": "Next",
+
+  "Home_home": "Bill",
+
+  "Login_title": " ",
+  "Login_warning": "",
+  "Login_password": "",
+  "Login_enter_password": "",
+  "Login_btn_login": "",
+  "Login_no_accaunt": "",
+  "Login_registration": "",
+
+  "Planing_title": "Planing",
+  "Planing_no_categories": "No categories",
+  "Planing_add_category": "Add a new category",
+
+  "Record_title": "New record",
+  "Record_no_categories": "Add a new category",
+  "Record_add_category": "New record",
+  "Record_enter_category": "Select record", 
+  "Record_income": "Income",
+  "Record_consumption": "Consumption",
+  "Record_sum": "Sum",
+  "Record_min_value": "min value",
+  "Record_description": "Description",
+  "Record_enter_description": "Enter description",
+  "Record_added": "Create",
+
+  
+  "Register_title": "Home bookkeeping",
+  "Register_correct_email": "Please enter a valid email",
+  "Register_regulations_checkbox": "I agree with the rules",
+  "Register_registration": "Register now",
+  "Register_account_exists": "Already have an account?",
+  "Register_come_in": "To come in",
+
+  "Category_comp_create": "Create a",
+  "Category_comp_name": "Name",
+  "Category_comp_warning": "Enter the name of the category!",
+  "Category_comp_limit": "Limit",
+  "Category_comp_min_value": "Minimum value",
+  "Category_comp_btn_create": "Create a",
+  "CategoryEdit_comp_edit": "Edit",
+  
+  "CategoryEdit_comp_select_category": "Select a category",
+  "CategoryEdit_comp__edit_name": "Change name:",
+  "CategoryEdit_comp_edit_warning": "Enter the name of the category!",
+  "CategoryEdit_comp_edit_min_value": "Minimum value",
+
+  "HistoryTb_comp_date": "Date",
+  "HistoryTb_comp_type": "Type",
+  "HistoryTb_comp_open": "Open",
+
+  "HomeBill_comp_score": "Currency account",
+
+  "HomeCurrency_comp_curs": "Exchange Rates",
+  "HomeCurrency_comp_currency": "Currency",
+  "HomeCurrency_comp_curs_tab": "Course",
+
+  "tooltip_new_record": "Create a new entry",
+  "tooltip_excess_money": "Excess by", 
+  "tooltip_balance": "Balance:" 
+  
+
+  
+
+
+
+
+
+}
