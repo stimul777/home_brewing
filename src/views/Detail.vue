@@ -4,7 +4,7 @@
     <div v-else-if="record">
       <div class="breadcrumb-wrap">
         <router-link to="/history" class="breadcrumb">{{
-          "History" | localize
+          "Detail" | localize
         }}</router-link>
         <a class="breadcrumb" @click.prevent>
           {{ record.type === "income" ? "Доход" : "Расход" }}
@@ -40,7 +40,7 @@
     </div>
 
     <p class="center" v-else>
-      Запись с id: <strong>{{ $route.params.id }}</strong> не найдена
+      {{ "Detail_warning" | localize }} <strong>{{ $route.params.id }}</strong>
     </p>
   </div>
 </template>

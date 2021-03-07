@@ -24,8 +24,8 @@
         v-model="page"
         :page-count="pageCount"
         :click-handler="pageChangeHandler"
-        :prev-text="'Назад'"
-        :next-text="'Вперед'"
+        :prev-text="prevText"
+        :next-text="nextText"
         :container-class="'pagination'"
         :page-class="'waves-effect'"
       />
@@ -37,6 +37,7 @@
 import paginationMixin from "@/mixins/pagination.mixin";
 import HistoryTable from "@/components/HistoryTable";
 import { Pie } from "vue-chartjs";
+import localizeFilter from "@/filters/localize.filter";
 
 export default {
   name: "history",
@@ -47,7 +48,9 @@ export default {
   mixins: [paginationMixin],
   data: () => ({
     loading: true,
-    records: []
+    records: [],
+    prevText: localizeFilter("History_btn_prev"),
+    nextText: localizeFilter("History_btn_next")
   }),
 
   methods: {

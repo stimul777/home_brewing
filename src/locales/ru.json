@@ -3,6 +3,8 @@
   "Profile_message_EnterName": "Введите имя:",
   "Profile_name": "Имя",
   "Profile_update": "Обновить",
+  "Profile_exit": "Выйти",
+  
 
    "Sidebar_Bill": "Счет",
    "Sidebar_History": "История",
@@ -17,10 +19,13 @@
    "Detail_description": "Описание",
    "Detail_sum": "Сумма",
    "Detail_category": "Категория",
+   "Detail_warning": "Такая запись не найдена:",
    
    "History_history_store": "История записей",
    "History_warning": "Записей пока нет",
    "History_added_record": "Добавьте первую",
+   "History_btn_prev": "Назад",
+   "History_btn_next": "Вперед",
 
    "Home_home": "Счет",
 
@@ -53,6 +58,33 @@
    "Register_regulations_checkbox": "С правилами согласен",
    "Register_registration": "Зарегистрироваться",
    "Register_account_exists": "Уже есть аккаунт?",
-   "Register_come_in": "Войти!"
+   "Register_come_in": "Войти!",
+
+   "Category_comp_create": "Создать",
+   "Category_comp_name": "Название",
+   "Category_comp_warning": "Введите название категории!",
+   "Category_comp_limit": "Лимит",
+   "Category_comp_min_value": "Минимальное значение",
+   "Category_comp_btn_create": "Создать",
+   "CategoryEdit_comp_edit": "Редактировать",
+   
+   "CategoryEdit_comp_select_category": "Выберите категорию",
+   "CategoryEdit_comp__edit_name": "Изменить название:",
+   "CategoryEdit_comp_edit_warning": "Введите название категории!",
+   "CategoryEdit_comp_edit_min_value": " Минимальное значение ",
+
+   "HistoryTb_comp_date": "Дата",
+   "HistoryTb_comp_type": "Тип",
+   "HistoryTb_comp_open": "Открыть",
+
+   "HomeBill_comp_score": "Счет в валюте",
+
+   "HomeCurrency_comp_curs": "Курс валют",
+   "HomeCurrency_comp_currency": "Валюта",
+   "HomeCurrency_comp_curs_tab": "Курс",
+
+   "tooltip_new_record": "Создать новую запись",
+   "tooltip_excess_money": "Превышение на", 
+   "tooltip_balance": "Остаток:" 
 
 }

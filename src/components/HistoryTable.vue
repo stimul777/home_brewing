@@ -4,11 +4,11 @@
       <thead>
         <tr>
           <th>#</th>
-          <th>Сумма</th>
-          <th>Дата</th>
-          <th>Категория</th>
-          <th>Тип</th>
-          <th>Открыть</th>
+          <th>{{ "Detail_sum" | localize }}</th>
+          <th>{{ "HistoryTb_comp_date" | localize }}</th>
+          <th>{{ "Detail_category" | localize }}</th>
+          <th>{{ "HistoryTb_comp_type" | localize }}</th>
+          <th>{{ "HistoryTb_comp_open" | localize }}</th>
         </tr>
       </thead>
 
