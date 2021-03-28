@@ -19,6 +19,8 @@ npm run serve:
 сборка проекта:  
   npm run build
 
+ps/ ключ в .env не скрыт для беспроблемного доступа к проекту в режиме разработки 
+
 ### Скриншоты
 1.
 <img width="824" alt="Screenshot_6" src="https://user-images.githubusercontent.com/47146778/112766391-4c626b80-901a-11eb-825d-3d83ff10b0e8.png">
