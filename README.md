@@ -1,24 +1,20 @@
-# crm-system
+Система для ведения домашней бухгалтерии.
+В системе используeтся: 
 
-## Project setup
-```
+-VueJS(vueX, vueRouter)
+-UI: materialize-css
+-Firebaze (база данных)
+
+Реализована регистрация и авторизация пользователей, графики отображения информации, заведение и редактирование категорий, а также мультиязычность. 
+
+## Развернуть проект
+- установить зависимости npm
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
+- запустить проект в режиме разработчика 
 npm run serve
-```
 
-### Compiles and minifies for production
-```
+- сборка проекта
 npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<img width="824" alt="Screenshot_6" src="https://user-images.githubusercontent.com/47146778/112766391-4c626b80-901a-11eb-825d-3d83ff10b0e8.png">
