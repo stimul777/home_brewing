@@ -1,13 +1,15 @@
+### Описание
 Система для ведения домашней бухгалтерии.
 В системе используeтся: 
+-VueJS(vueX, vueRouter)  
 
--VueJS(vueX, vueRouter)
--UI: materialize-css
--Firebaze (база данных)
+-UI: materialize-css  
+
+-Firebaze (база данных)  
 
 Реализована регистрация и авторизация пользователей, графики отображения информации, заведение и редактирование категорий, а также мультиязычность. 
 
-## Развернуть проект
+### Развернуть проект
 - установить зависимости npm
 npm install
 
@@ -17,7 +19,7 @@ npm run serve
 - сборка проекта
 npm run build
 
-## Скриншоты
+### Скриншоты
 <img width="824" alt="Screenshot_6" src="https://user-images.githubusercontent.com/47146778/112766391-4c626b80-901a-11eb-825d-3d83ff10b0e8.png">
 
 <img width="1902" alt="Screenshot_11" src="https://user-images.githubusercontent.com/47146778/112766450-7582fc00-901a-11eb-8f22-28199cbdbfe7.png">
